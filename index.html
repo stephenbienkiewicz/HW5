@@ -9,10 +9,9 @@
 		
 		<div onclick="change()" id="el">CLICK ME</div>
 
-
 		<script>
 			// 1) Variables:
-			// explain...
+			// JavaScript variables are containers for storing data values.
 			var num1 = 10;
 			var num2 = 5;
 
@@ -21,15 +20,8 @@
 			console.log(result);
 			console.log(num1 - num2);
 
-			var string1 = "The dog ";
-			var string2 = "is small.";
-
-			var result = string1 + string2;
-
-			console.log(result);
-
-			// 2) Debugging
-			// explain...
+			// 2) Debugging: 
+			// You activate debugging in your browser with F12, and select "Console" in the debugger menu.
 			function sayHello(name) {
 				return alert("Hello " + name);
 			}
@@ -49,8 +41,8 @@
 				document.getElementById("el").innerHTML = "HAHA";
 			}
 
-			// 3) Different data types
-			// explain...
+			// 3) Different data types:
+			// JavaScript variables can hold many data types: numbers, strings, arrays, objects and more.
 			var x = 10;
 			var y = 7;
 
@@ -58,23 +50,24 @@
 
 			console.log(boolean);
 
+			var string1 = "The dog ";
+			var string2 = "is small.";
 
+			var result = string1 + string2;
 
-			// 4) Arrays
-			// explain...
-			var stephen = {
-				firstName: "Stephen",
-				lastName: "Bienkiewicz",
-				car: "Honda",
-				interests: ["swimming", "traveling"]
-			};
+			console.log(result);
 
-			console.log(stephen.car);
-			console.log(stephen.interests[1]);
-
+			// 4) Arrays:
+			// JavaScript arrays are used to store multiple values in a single variable.
 			
-			// 5) Objects
-			// explain...
+			// create simplified array interests
+			var cars = ["BMW", "Volvo", "Audi", "Honda", "Acura"];
+
+			console.log(cars[0]);
+			console.log(cars[3]);
+	
+			// 5) Objects:
+			// Objects are variables too. But objects can contain many values.
 			var futbol = {
 				country: "England",
 				league: "BPL",
@@ -84,13 +77,15 @@
 
 			console.log(futbol.team);
 
-			
-			// 6) Testing
-			// explain...
+			// 6) Testing:
+			// Comparison operators are used in logical statements to determine equality or difference between variables or values.
+			var a = 8
 
-			
-			// 7) Logic
-			// explain...
+			console.log(a === 9)
+			console.log(a === 8)
+
+			// 7) Logic:
+			// Logical operators are used to determine the logic between variables or values.
 			function openDoor(doorNumber) {
 				if (doorNumber === 1) {
 					return console.log("You lost!");
@@ -101,9 +96,6 @@
 
 			openDoor(1);
 			openDoor(2);
-
-
-
 		</script>	
 	</body>
 </html>
